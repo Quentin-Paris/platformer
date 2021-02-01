@@ -1,4 +1,4 @@
-class MonsterFly extends ObjetEnnemi{
+class MonstreBat extends ObjetEnnemi{
     /**
      *
      * @param {Tableau} scene
@@ -6,12 +6,12 @@ class MonsterFly extends ObjetEnnemi{
      * @param y
      */
     constructor(scene, x, y) {
-        super(scene, x, y, "monster-fly");
+        super(scene, x, y, "bat");
         //pas de gravité
         this.body.allowGravity=false;
 
         //gestion de la taille
-        this.setDisplaySize(64,64);
+        this.setDisplaySize(32,32);
 
         //on réduit un peu la zone de hit
         this.setBodySize(this.body.width-400,this.body.height-400);
@@ -21,13 +21,13 @@ class MonsterFly extends ObjetEnnemi{
 
         // X
         this.originalX=x;
-        this.minX=x-200;
-        this.maxX=x+200;
+        this.minX=x-400;
+        this.maxX=x+400;
 
         // Y
         this.originalY=y;
-        this.minY=y-5;
-        this.maxY=y+5;
+        this.minY=y-10;
+        this.maxY=y+10;
 
         // on applique les propriété du début de l'animation
         this.x=this.minX;
@@ -39,7 +39,7 @@ class MonsterFly extends ObjetEnnemi{
         //ceci a pour effet de décaler les animations pour ce même objet
         scene.tweens.add({
                 targets:this,
-                duration:200,
+                duration:100,
                 delay:Math.random()*1000,
                 alpha:{
                     startDelay:Math.random()*5000,
