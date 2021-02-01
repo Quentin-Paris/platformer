@@ -14,20 +14,20 @@ class MonsterBat extends ObjetEnnemi{
         this.setDisplaySize(32,32);
 
         //on réduit un peu la zone de hit
-        this.setBodySize(this.body.width-400,this.body.height-400);
+        this.setBodySize(this.body.width,this.body.height-400);
         this.setOffset(150, 250);
 
         //définir les propriété que l'on va utiliser dans notre animation
 
         // X
         this.originalX=x;
-        this.minX=x-400;
-        this.maxX=x+400;
+        this.minX=x-200;
+        this.maxX=x+200;
 
         // Y
         this.originalY=y;
-        this.minY=y-10;
-        this.maxY=y+10;
+        this.minY=y-40;
+        this.maxY=y+40;
 
         // on applique les propriété du début de l'animation
         this.x=this.minX;
@@ -39,7 +39,7 @@ class MonsterBat extends ObjetEnnemi{
         //ceci a pour effet de décaler les animations pour ce même objet
         scene.tweens.add({
                 targets:this,
-                duration:100,
+                duration:200,
                 delay:Math.random()*1000,
                 alpha:{
                     startDelay:Math.random()*5000,

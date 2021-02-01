@@ -10,7 +10,7 @@ class Tableau06 extends Tableau{
     }
     create() {
         super.create();
-        //quelques étoiles
+        //une étoiles
         this.star1=this.physics.add.sprite(800,400,"star");
         this.star1.setCollideWorldBounds(true);
         this.star1.setBounce(0);
@@ -37,7 +37,9 @@ class Tableau06 extends Tableau{
         //nos monstres volants
         new MonsterFly(this,400,100);
         //Monstre volant bat
-        new MonsterBat(this, 200,50);
+        new MonsterBat(this, 600,200);
+
+        //new MonsterViolet (this, 700, 400);
 
     }
 
