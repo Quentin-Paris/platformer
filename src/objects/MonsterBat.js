@@ -1,4 +1,4 @@
-class MonstreBat extends ObjetEnnemi{
+class MonsterBat extends ObjetEnnemi{
     /**
      *
      * @param {Tableau} scene

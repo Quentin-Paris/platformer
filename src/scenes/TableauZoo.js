@@ -37,7 +37,7 @@ class Tableau06 extends Tableau{
         //nos monstres volants
         new MonsterFly(this,400,100);
         //Monstre volant bat
-        new MonstreBat(this, 200,50);
+        new MonsterBat(this, 200,50);
 
     }
 
