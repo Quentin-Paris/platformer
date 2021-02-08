@@ -6,7 +6,7 @@ class Tableau06 extends Tableau{
         this.load.image('monster-violet', 'assets/monster-violet.png');
         this.load.image('monstre-rose','assets/monstre-rose.png');
         this.load.image('monster-fly', 'assets/monster-fly.png');
-        this.load.image('bat', 'assets/bat.png');
+        this.load.image('monster-bat', 'assets/bat.png');
     }
     create() {
         super.create();
@@ -39,8 +39,8 @@ class Tableau06 extends Tableau{
         //Monstre volant bat
         new MonsterBat(this, 600,200);
 
-        //new MonsterViolet (this, 700, 400);
-
+        new MonsterViolet (this, 300, 200);
+        
     }
 
 }

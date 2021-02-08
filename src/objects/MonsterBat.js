@@ -6,7 +6,7 @@ class MonsterBat extends ObjetEnnemi{
      * @param y
      */
     constructor(scene, x, y) {
-        super(scene, x, y, "bat");
+        super(scene, x, y, "monster-bat");
         //pas de gravité
         this.body.allowGravity=false;
 
