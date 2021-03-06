@@ -1,1 +1,1 @@
- https://anatole-p.github.io/platformer/
+https://Quentin-Paris.github.io/platformer/
