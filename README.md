@@ -1,2 +1,1 @@
-
-https://quentin-paris.github.io/platformer/
+https://Quentin-Paris.github.io/platformer/

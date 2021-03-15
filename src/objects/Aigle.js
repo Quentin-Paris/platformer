@@ -1,4 +1,4 @@
-class MonsterBat extends ObjetEnnemi{
+class Aigle extends ObjetEnnemi{
     /**
      *
      * @param {Tableau} scene
@@ -6,15 +6,15 @@ class MonsterBat extends ObjetEnnemi{
      * @param y
      */
     constructor(scene, x, y) {
-        super(scene, x, y, "monster-bat");
+        super(scene, x, y, "Aigle");
         //pas de gravité
         this.body.allowGravity=false;
 
         //gestion de la taille
-        this.setDisplaySize(32,32);
+        this.setDisplaySize(64,64);
 
         //on réduit un peu la zone de hit
-        this.setBodySize(this.body.width,this.body.height-400);
+        this.setBodySize(this.body.width-300,this.body.height-300);
         this.setOffset(150, 250);
 
         //définir les propriété que l'on va utiliser dans notre animation
@@ -26,8 +26,8 @@ class MonsterBat extends ObjetEnnemi{
 
         // Y
         this.originalY=y;
-        this.minY=y-40;
-        this.maxY=y+40;
+        this.minY=y-5;
+        this.maxY=y+5;
 
         // on applique les propriété du début de l'animation
         this.x=this.minX;
