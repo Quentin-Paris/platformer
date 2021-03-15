@@ -1,4 +1,4 @@
-class cours extends Tableau{
+class TableauTiled extends Tableau{
     /**
      * Ce tableau démontre comment se servir de Tiled, un petit logiciel qui permet de designer des levels et de les importer dans Phaser (entre autre).
      *
@@ -55,7 +55,7 @@ class cours extends Tableau{
         // 1 La méthode que je préconise (il faut définir une propriété dans tiled pour que ça marche)
         //permet de travailler sur un seul layer dans tiled et des définir les collisions en fonction des graphiques
         //exemple ici https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tiled-1-958fc7e6bbd6
-        this.solides.setCollisionByProperty({ collides: true });
+        //this.solides.setCollisionByProperty({ collides: true });
         this.lave.setCollisionByProperty({ collides: true });
 
         // 2 manière la plus simple (là où il y a des tiles ça collide et sinon non)

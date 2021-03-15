@@ -15,7 +15,7 @@ let config = {
     },
     scene: [
         new Ui(),
-
+        new TableauTiled("niveau"),
         new TableauTest("triple layers"),
         new TableauZoo("J'adore les animals"),
         new Tableau00A("JCVD"),
