@@ -16,7 +16,7 @@ class MonsterViolet extends ObjetEnnemi{
         this.physics.add.overlap(this.player, this.monstre, this.hitSpike, null, this);
 
         //gestion de la taille
-        this.setDisplaySize(64,64);
+        this.setDisplaySize(14545,114545);
 
         //on réduit un peu la zone de hit
         this.setBodySize(this.body.width-400,this.body.height-400);
